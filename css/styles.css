@@ -1,0 +1,297 @@
+:root {
+    --bg-main: #121212;
+    --bg-secondary: #1e1e1e;
+    --title-back: rgb(112, 9, 9);
+    --back-two: rgb(86, 7, 7);
+    --text-main: #3fc017;
+    --text-muted: #2f7d05;
+    --accent: rgb(214, 214, 13);
+    --font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    border: 0px solid red;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+nav,
+main,
+section,
+footer,
+ul,
+li,
+h1,
+h2,
+p,
+div {
+    border: 0px solid red;
+}
+
+h1,
+h2,
+p,
+ul,
+ol {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: var(--font-stack);
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px 10px 10px 10px;
+    margin: 20px auto;
+    max-width: 80%;
+    background-image: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9)), url('/assets/jc1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    max-height: 200px;
+}
+
+
+h1.hero {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 41px;
+
+}
+
+.photography-page h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    color: var(--text-main);
+}
+
+ul {
+    color: brown;
+}
+
+nav {
+    background-color: rgb(42, 99, 165);
+    font-size: .50em;
+    border-radius: 10px;
+    max-width: 90;
+    margin: 0 auto;
+}
+
+
+ul.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 1px;
+    padding: 0%;
+    border: 2px solid blue;
+    border-radius: 10px;
+
+}
+
+ul.nav-list li {
+    position: relative;
+    font-size: 1.0rem;
+    background-color: rgb(160, 20, 10);
+    margin: 10px 5px;
+    border-radius: 20px;
+    padding: 5px 10px;
+
+}
+
+ul.navlist li a:hover {
+    background-color: var(--accent);
+}
+
+
+header div .nav-list li a {
+    text-transform: uppercase;
+    color: rgb(234, 238, 19);
+}
+
+header div a h1 .hero {
+    color: red;
+}
+
+.test-box {
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 40px;
+}
+
+h1.hero {
+    color: var(--accent);
+    font-size: 3.0rem;
+    text-align: left;
+    border-style: double;
+    border-color: purple;
+    margin: 20px auto;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    min-height: 400px;
+    max-width: 90%;
+}
+
+.index-page h1.hero {
+    background-image: url('../assets/photography/blue_ridge_2.jpg');
+}
+
+.photography-page h1.hero {
+    background-image: url('../assets/Ainti-inQ.jpg');
+    color: white;
+}
+
+.development-page h1.hero {
+    background-image: url('../assets/coajudors.jpg');
+}
+
+.photography-page h1.hero {
+    background-image: url('../assets/photography/blue_ridge_2.jpg');
+}
+
+.about-page h1.hero {
+    background-image: url('../assets/photography/blue_ridge_1.jpg');
+    color: white;
+}
+
+.video-page h1.hero {
+    background-image: url('../assets/video.png');
+}
+
+.research-page h1.hero {
+    background-image: url('../assets/database_report.jpg');
+
+}
+
+.flex-demo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.development-page .flex-demo,
+.research-page .flex-demo,
+.video-page .flex-demo {
+    flex-direction: column;
+
+}
+
+.card {
+
+    background: rgb(60, 60, 60);
+    border: 2px double rgb(4, 82, 4);
+    color: var(--accent);
+    flex: 0 0 250px;
+    box-sizing: border-box;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px 10px 15px 10px;
+}
+
+.development-page .card,
+.research-page .card,
+.video-page .card {
+    width: 75%;
+}
+
+.development-page .card img,
+.research-page .card img,
+.video-page .card img {
+    width: 75%;
+    object-fit: cover;
+    min-height: 500px;
+}
+
+.card img {
+    border-radius: 8px;
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+}
+
+.card h4 {
+    margin: 12px 0 6px;
+    font-size: 22px;
+}
+
+.card p {
+    margin: 0 0 12px;
+    line-height: 1.4;
+    color: var(--text-main)
+}
+
+/* Style the button */
+.button {
+    display: inline-block;
+    margin-top: auto;
+    padding: 10px 12px;
+    border-radius: 12px;
+    background-color: rgb(7, 150, 7);
+    color: white;
+    font-family: Georgia, serif;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    background-color: darkgreen;
+}
+
+.card h4 {
+    margin: 12px 0 6px;
+    font-size: 22px;
+}
+
+.card p {
+    margin: 0 0 12px;
+    line-height: 1.4;
+}
+
+ul.navlist li a {
+    color: var(--text-muted);
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    /* Pushes the dropdown directly below the parent li */
+    left: 0;
+    width: 150px;
+    padding: 10px;
+    background-color: rgb(160, 20, 10);
+    border-radius: 10px;
+    list-style-type: none;
+    display: none;
+    z-index: 10;
+    color: var(--text-muted);
+}
+
+ul.nav-list li.has-dropdown:hover .submenu {
+    display: block;
+}

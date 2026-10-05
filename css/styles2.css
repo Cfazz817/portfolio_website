@@ -1,0 +1,235 @@
+:root {
+    --bg-main: #121212;
+    --bg-secondary: #1e1e1e;
+    --title-back: rgb(112, 9, 9);
+    --back-two: rgb(86, 7, 7);
+    --text-main: #3fc017;
+    --text-muted: #2f7d05;
+    --accent: rgb(214, 214, 13);
+    --font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: var(--font-stack);
+    line-height: 1.6;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9)), url('/assets/jc1.png');
+    background-size: cover;
+    /* Forces the image to cover the entire screen */
+    background-position: center;
+    /* Keeps the focal point in the middle */
+    background-repeat: no-repeat;
+    /* Prevents the image from tiling */
+    background-attachment: fixed;
+    /* Optional: keeps the image locked in place when you scroll */
+}
+
+h1,
+h2,
+h3,
+p {
+
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1.hero {
+    color: #54df14;
+    font-size: 4rem;
+    background-image: url('../assets/il_340x270.4108765300_i8y4.png');
+    border-style: double;
+    border-color: purple;
+
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 10px;
+
+    background-size: cover;
+    /* Forces the image to cover the entire screen */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+main.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main img {
+    max-width: 40%;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+
+
+h1 {
+    color: var(--accent);
+    background-color: var(--title-back);
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+h2 {
+    background-color: var(--back-two);
+    color: var(--accent);
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    background-color: var(--back-two);
+    color: var(--accent);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: blue;
+    margin-top: 20px;
+
+}
+
+h5 {
+    color: crimson;
+}
+
+h6 {
+    color: chartreuse;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #23a309;
+}
+
+p,
+ol,
+ul,
+li {
+    color: var(--text-main);
+}
+
+ol {
+    margin-top: 10px;
+    list-style-type: decimal;
+}
+
+ul {
+    color: darkgoldenrod;
+    list-style-type: square;
+}
+
+li {
+    color: var(--text-main);
+}
+
+/* =========================================
+   3. Navigation Bar
+   ========================================= */
+nav {
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #333;
+    text-align: center;
+    justify-content: center;
+    white-space: nowrap;
+    overflow-x: auto;
+
+}
+
+nav a {
+    font-size: 1.1rem;
+    color: var(--text-main);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+
+
+.fav-websites li a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: rgb(230, 238, 14);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 50px;
+    list-style-type: lower-roman;
+}
+
+.fav-websites p {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.fav-websites li a:hover {
+    color: red;
+}
+
+h2.fav-websites2 {
+    color: rgb(254, 235, 21);
+    background-color: rgb(4, 4, 134);
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.fav-websites2 li a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.25rem;
+    color: rgb(126, 8, 8);
+    text-transform: none;
+    letter-spacing: 3px;
+    line-height: 40px;
+}
+
+.fav-websites2 li {
+    list-style-type: lower-latin;
+}
+
+.fav-websites2 p {
+    color: darkorange;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.fav-websites2 li a:hover {
+    color: rgb(47, 0, 255);
+}
+
+.site-footer {
+    font-size: 1.5rem;
+    margin-top: 100px;
+}

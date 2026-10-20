@@ -5,6 +5,7 @@
     --back-two: rgb(86, 7, 7);
     --text-main: #3fc017;
     --text-muted: #2f7d05;
+    --back-time: rgb(4, 88, 11);
     --accent: rgb(214, 214, 13);
     --font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -45,10 +46,10 @@ body {
     color: var(--text-main);
     font-family: var(--font-stack);
     line-height: 1.6;
-    text-align: center;
     padding: 20px 10px 10px 10px;
     margin: 20px auto;
     max-width: 80%;
+    /* The master width controller for your site */
     background-image: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9)), url('/assets/jc1.png');
     background-size: cover;
     background-position: center;
@@ -56,8 +57,22 @@ body {
     background-attachment: fixed;
 }
 
+.container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+
+}
+
 a {
     text-decoration: none;
+}
+
+
+header img.logo {
+    display: block;
+    margin: 0 auto;
+    max-height: 200px;
 }
 
 .logo {
@@ -77,6 +92,7 @@ h1.hero {
 
 p {
     color: var(--text-main);
+    text-align: left;
 }
 
 ul {
@@ -84,10 +100,11 @@ ul {
 }
 
 nav {
-    background-color: rgb(42, 99, 165);
+    background-color: var(--back-time);
     font-size: .50em;
     border-radius: 10px;
-    max-width: 90;
+    width: 100%;
+    /* Replaced max-width: 90; */
     margin: 0 auto;
 }
 
@@ -98,7 +115,7 @@ ul.nav-list {
     list-style-type: none;
     gap: 1px;
     padding: 0%;
-    border: 2px solid blue;
+    border: 2px solid rgb(96, 154, 8);
     border-radius: 10px;
 
 }
@@ -139,7 +156,8 @@ h1.hero {
     text-align: left;
     border-style: double;
     border-color: purple;
-    margin: 20px auto;
+    margin: 20px 0;
+    /* Changed from 20px auto to align flush left/right */
     padding-bottom: 10px;
     padding-left: 20px;
     border-radius: 10px;
@@ -149,8 +167,10 @@ h1.hero {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: local;
-    min-height: 400px;
-    max-width: 90%;
+    min-height: 60vh;
+    /* Increased from 400px to 60% of the screen height */
+    width: 100%;
+    /* Changed from max-width: 90% to span the full container */
 }
 
 .index-page h1.hero {
@@ -294,4 +314,63 @@ ul.navlist li a {
 
 ul.nav-list li.has-dropdown:hover .submenu {
     display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 5px solid #333;
+    border-radius: 15px;
+    max-width: 800px;
+}
+
+fieldset {
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    max-width: 800px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+input {
+    width: 90%;
+    height: 25px;
+    font-size: 20px;
+}
+
+textarea {
+    width: 90%;
+}
+
+.phone {
+    width: 100px;
+}
+
+button {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 10px 10px;
+    width: 50%;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #b50067;
+    border-radius: 20px;
 }

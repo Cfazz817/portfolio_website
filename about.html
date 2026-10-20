@@ -30,6 +30,70 @@
             coding projects, video production projects, and any other multimedia that fits
             into this subset of my work.
         </p> <!-- Body paragraph -->
+
+        <form action="https://formspree.io/f/xnpjgbge" method="POST">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" minlength="2" maxlength="20" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" minlength="2" maxlength="20" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="hear-about-me">Where did you hear about me?</label>
+
+            <select id="hear-about-me" name="hear_about_me">
+                <option value="facebook">Facebook</option>
+                <option value="instagram">Instagram</option>
+                <option value="github">Github</option>
+                <option value="other">Other</option>
+            </select>
+
+
+            <label for=""></label>
+            <fieldset>
+                <legend>
+                    <h2>Choose your preferred contact method:</h2>
+                </legend>
+
+                <div>
+                    <input type="radio" id="contact-email" name="contact_method" value="email" checked>
+                    <label for="contact-email">Email</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="contact-phone" name="contact_method" value="phone">
+                    <label for="contact-phone">Phone</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h2>Select your Interests:</h2>
+                </legend>
+
+                <div>
+                    <input type="checkbox" id="interest-photography" name="interests" value="photography">
+                    <label for="interest-photography">Photography</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="interest-coding" name="interests" value="coding">
+                    <label for="interest-coding">Coding</label>
+                </div>
+            </fieldset>
+
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
         <h2>Selected Photographs</h2>
         <section class="flex-demo">
 

@@ -199,8 +199,9 @@ h1.hero {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-
-/* --- X state: when checkbox is checked --- */
+#nav-toggle {
+    display: none;
+}
 
 
 /* Animate hamburger lines when menu is open */

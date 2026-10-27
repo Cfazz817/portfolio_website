@@ -126,7 +126,7 @@ ul.nav-list li {
     background-color: rgb(160, 20, 10);
     margin: 10px 5px;
     border-radius: 20px;
-    padding: 5px 10px;
+    padding: 10px 10px;
 
 }
 
@@ -171,6 +171,118 @@ h1.hero {
     /* Increased from 400px to 60% of the screen height */
     width: 100%;
     /* Changed from max-width: 90% to span the full container */
+}
+
+/* Hide the checkbox itself */
+.hamburger input {
+    display: none;
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+/* --- X state: when checkbox is checked --- */
+
+
+/* Animate hamburger lines when menu is open */
+#nav-toggle:checked+.hamburger span:nth-child(1) {
+    transform: translateY(9.5px) rotate(45deg);
+}
+
+#nav-toggle:checked+.hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+#nav-toggle:checked+.hamburger span:nth-child(3) {
+    transform: translateY(-9.5px) rotate(-45deg);
+}
+
+
+/* ============================================
+   MEDIA QUERY — MOBILE (max-width: 768px)
+   ============================================ */
+
+
+@media (max-width: 825px) {
+
+
+    .hamburger {
+        display: flex;
+        position: absolute;
+    }
+
+    .header-container {
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    /* Hide nav by default on mobile */
+    nav {
+        display: none;
+    }
+
+    /* Show nav when checkbox is checked */
+    #nav-toggle:checked~nav {
+        display: block;
+    }
+
+    /* Manage mobile menu appearance */
+    nav {
+        flex-basis: 100%;
+        width: 100%;
+        background-color: rgb(33, 31, 31);
+    }
+
+    h1.hero {
+        min-height: 20vh;
+    }
+
+    /* Stack nav links vertically */
+    ul.nav-list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    ul.nav-list li {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+
+    /* Manage links appearance */
+    ul.nav-list li a {
+        color: blue;
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+
+    header {
+        background-color: transparent;
+    }
+
+
 }
 
 .index-page h1.hero {

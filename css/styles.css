@@ -86,8 +86,13 @@ h1.hero {
 
 }
 
-.photography-page h2 {
+.photography-page h2,
+.development-page h2,
+.research-page h2,
+.video-page h2 {
     font-size: 2.5rem;
+    text-align: center;
+    color: var(--accent);
 }
 
 p {
@@ -295,6 +300,42 @@ h1.hero {
     color: white;
 }
 
+.grid-time {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+/* The Cards */
+.photography-page .card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Slight lift effect on hover */
+.photography-page .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Photography Images */
+.photography-page .card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+.photography-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--accent);
+}
+
 .development-page h1.hero {
     background-image: url('../assets/coajudors.jpg');
 }
@@ -314,8 +355,11 @@ h1.hero {
 
 .research-page h1.hero {
     background-image: url('../assets/database_report.jpg');
+    font-size: 5.0rem;
+    color: var(--accent);
 
 }
+
 
 .flex-demo {
     display: flex;
@@ -327,12 +371,7 @@ h1.hero {
     margin: 10px auto;
 }
 
-.development-page .flex-demo,
-.research-page .flex-demo,
-.video-page .flex-demo {
-    flex-direction: column;
 
-}
 
 .card {
 
@@ -343,20 +382,6 @@ h1.hero {
     box-sizing: border-box;
     padding: 15px 15px 15px 15px;
     border-radius: 20px 10px 15px 10px;
-}
-
-.development-page .card,
-.research-page .card,
-.video-page .card {
-    width: 75%;
-}
-
-.development-page .card img,
-.research-page .card img,
-.video-page .card img {
-    width: 75%;
-    object-fit: cover;
-    min-height: 500px;
 }
 
 .card img {
@@ -413,7 +438,6 @@ ul.navlist li a {
 .submenu {
     position: absolute;
     top: 100%;
-    /* Pushes the dropdown directly below the parent li */
     left: 0;
     width: 150px;
     padding: 10px;
@@ -486,4 +510,68 @@ button {
 button:hover {
     background-color: #b50067;
     border-radius: 20px;
+}
+
+
+.development-page .flex-demo,
+.research-page .flex-demo,
+.video-page .flex-demo {
+    flex-direction: column;
+    align-items: center;
+}
+
+.development-page .card,
+.research-page .card,
+.video-page .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    flex: auto;
+    padding: 25px;
+}
+
+.development-page .card img,
+.research-page .card img,
+.video-page .card img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+
+.development-page .card h4,
+.research-page .card h4,
+.video-page .card h4 {
+    margin-top: 0;
+    width: 100%;
+}
+
+
+.development-page .card .button,
+.research-page .card .button,
+.video-page .card .button {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.research-page .card h3 {
+    font-size: 1.3rem;
+}
+
+.research-page .card h2 {
+    font-size: 2.0rem;
+}
+
+.video-page .card iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: none;
 }

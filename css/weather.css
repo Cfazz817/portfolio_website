@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7fb;
+    color: #222;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+}
+
+#weather-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.card p {
+    margin: 8px 0;
+}
+
+.hero {
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+#current-conditions {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 40px;
+    border-radius: 12px;
+    text-align: center;
+    backdrop-filter: blur(4px);
+
+}
+
+
+.current-icon {
+    width: 64px;
+    height: 64px;
+}

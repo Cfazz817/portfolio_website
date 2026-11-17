@@ -51,7 +51,7 @@ fetch(apiUrl)
 
         // Change the hero background photo based on current conditions
         const heroSection = document.getElementById("hero");
-        heroSection.style.backgroundImage = "url('../images/" + currentCondition.photo + "')";
+        heroSection.style.backgroundImage = "url('../assets/" + currentCondition.photo + "')";
 
         const nowHeading = document.createElement("h2");
         nowHeading.textContent = "Current conditions";
